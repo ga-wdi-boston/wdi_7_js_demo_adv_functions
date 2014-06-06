@@ -15,8 +15,6 @@ myapp.paint = function (node) {
 // It takes a callback function that is invoked for 
 // each DOM element of class 'test' and set it's color to green.
 var findNodes = function (callback) {
-	var nodes = [], // stores the result
-	found; // the next node found 
 	// get all the DOM elements
 	var testElements = document.getElementsByClassName("test");
 	for(var i = 0; i < testElements.length; i++){
@@ -25,7 +23,6 @@ var findNodes = function (callback) {
 			// findNodes function is a global object.
 			callback(testElements[i]);
 	};
-	return nodes; 
 };
 
 // Function that will make the DOM elements with a class of 'test' green. 
@@ -35,18 +32,15 @@ var findNodes = function (callback) {
 // Changing the Context will change the 'this' pointer used
 // inside the callback function.
 var findNodes_fixed = function (callback,callback_obj) {
-	var nodes = [], // stores the result
-	found; // the next node found 
 	// get all the DOM elements
 	var testElements = document.getElementsByClassName("test");
 	for(var i = 0; i < testElements.length; i++){
 			callback.call(callback_obj, testElements[i]);
 	};
-	return nodes; 
 };
 
 // Fails because 'this' pointer is WRONG
-// findNodes(myapp.paint);
+//findNodes(myapp.paint);
 
 
 var msg = "Hide All DOM elements with the class 'test'";

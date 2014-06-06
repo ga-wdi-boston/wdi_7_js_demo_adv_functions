@@ -7,24 +7,20 @@
 // Apply the callback to all DOM elements, nodes, that
 // have the class 'test'
 var findNodes = function (callback) {
-	var nodes = [], // stores the result
-	found; // the next node found 
 	// get all the DOM elements
 	var testElements = document.getElementsByClassName("test");
 	for(var i = 0; i < testElements.length; i++){
 			callback(testElements[i]);
 	};
-	return nodes; 
 };
 
 var msg = "Hide All DOM elements with the class 'test' with an anonymous callback";
 alert(msg);
 console.log(msg);
 
-
 // The callback is defined in-place,i.e. when the function is being using 
 // the callback is being invoked.
-findNodes(function hideNode(node){
+findNodes(function hide(node){
 	node.style.display = "none";
 });
 
