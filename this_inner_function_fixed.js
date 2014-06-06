@@ -5,7 +5,7 @@ var user = {
         {name:"P. Mickelson", age:43}
     ],
 
-    clickHandler:function () {
+    showPersonTournament:function () {
         // Let capture the this pointer in the enclosing function.
         // And use it in the enclosed anon function.
         var theUserObj = this; 
@@ -30,4 +30,4 @@ var user = {
 
 // Invoke the user object literal's clickHandler function.
 // Note: it's really not being used as a event handler here.
-user.clickHandler(); 
+user.showPersonTournament(); 

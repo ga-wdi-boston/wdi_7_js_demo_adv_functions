@@ -5,7 +5,7 @@ var user = {
         {name:"P. Mickelson", age:43}
     ],
 
-    clickHandler:function () {
+    showPersonTournament:function () {
         // Hey, what is the 'this' variable pointing to?
         debugger;
 
@@ -47,6 +47,6 @@ var user = {
 
 }
 
-// Invoke the user object literal's clickHandler function.
+// Invoke the user object literal's showPersonTournament function.
 // Note: it's really not being used as a event handler here.
-user.clickHandler(); 
+user.showPersonTournament(); 
