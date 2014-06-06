@@ -5,8 +5,7 @@
 // Add these nodes to an array, nodes.
 // And return this array.
 var findNodes = function () {
-	var nodes = [], // stores the result
-	found; // the next node found 
+	var nodes = []; // stores the result
 	// get all the DOM elements
 	var testElements = document.getElementsByClassName("test");
 	for(var i = 0; i < testElements.length; i++){
