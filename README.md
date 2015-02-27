@@ -1,6 +1,8 @@
-## Advanced Javascript Functions
+![General Assembly Logo](http://i.imgur.com/ke8USTq.png)
 
-  Learn some moderately advanced concepts about javascript functions.
+## Callbacks and the "this" pointer.
+
+Learn some important concepts about how javascript functions behave **at Runtime**.
 
 ## Objectives
 * Understand how to use functions as first-class objects.
@@ -24,9 +26,33 @@ They can be *“stored in variables, passed as arguments to functions, created w
 ### Lab
 Work through this article [Javascript Callbacks and how to use them](http://javascriptissexy.com/understand-javascript-callback-functions-and-use-them/). 
 
-Create files for each example. *You may need to create an associated HTML file with DOM elements refered to in exercises.*
+- Create a branch name \<initials\>_done, e.g. Thomas George Dyer branch would be named tgd_done.
 
-Step thru the code in a browser debugger and create comments at each point that may be surprising, or that need clarification.
+```
+git checkout -b <initials>_done
+```
+
+- Create a solutions directory for your javascript files.
+
+- Create javascript files, in solutions dir, for each example.  
+
+	*I created 8 javascript files and ran a couple in the browser, a couple using node.*
+
+	*You may need to create an associated HTML file with DOM elements refered to in exercises.*
+
+- Step thru the code in a browser debugger and create comments at each point that may be surprising, or that need clarification.
+
+	*Some examples, (Multiple Callback Functions Allowed, Callback Hell), cannot be coded. Write in your own words what the point of these examples are.*
+	
+- How can creating callbacks help to: 
+  
+	* DRY up your code?  
+	* Implement better abstractions?  
+	* Make your code more maintainable?
+	* Help to reuse code?
+
+**Put all your answers in callback_benefits.txt file. And submit a pull request.**
+
 
 ### Demo
 In the index.html change the script at the end of the body 
